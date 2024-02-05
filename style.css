@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
+    background-image: url("holdinghands.jpeg");
+    background-color: #223;
     
     
 
@@ -30,9 +32,7 @@
     
 }
 
-body {
-    background-color: #eeeeea;
-}
+
 
 .wrapper {
     width: 100%;
@@ -66,7 +66,7 @@ body {
     margin: 0 10px;
     display: flex;
     align-items: flex-end;
-    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    transition: .75s cubic-bezier(.28,-0.03,0,.99);
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
 }
 
@@ -122,20 +122,27 @@ input:checked + label .description {
     transform: translateY(0) !important;
 }
 
+.card[for="c1"].card[for="c2"].card[for="c3"].card[for="c4"] {
+    transition: all 0.75s ease;
+}
 .card[for="c1"] {
     background-image: url('volunteer.jpeg');
     object-fit: cover;
-    transition: all 1.5s ease;
+    
 }
 .card[for="c2"] {
-    background-image: url('./img2.jpeg');
-    transition: all 1.5s ease;
+    background-image: url('volunteer2.jpeg');
+    object-fit: cover;
+    height: 100%;
+    
 }
 .card[for="c3"] {
-    background-image: url('./img3.jpeg');
-    transition: all 1.5s ease;
+    background-image: url('volunteer3.jpg');
+    object-fit: cover;
+    
 }
 .card[for="c4"] {
-    background-image: url('./img4.jpeg');
-    transition: all 1.5s ease;
+    background-image: url('volunteer4.png');
+    object-fit: cover;
+    
 }
